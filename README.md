@@ -69,6 +69,8 @@ slog.SetDefault(h)
 // If just slog.Info(...) is called, the context will
 // be context.Background()
 slog.InfoContext(ctx, "hello world")
+
+// Output: {"level": "INFO", "msg": "hello world", "user_id": "..."}
 ```
 
 Include a static field in every log event:
