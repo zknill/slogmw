@@ -38,7 +38,7 @@ opts := &slog.HandlerOptions{
     // Here we can change the msg key to "log". All
     // log events will print out the log field as "log"
     // and not "msg".
-    slog.FormatKey(slog.MessageKey, "log")
+    slogmw.FormatKey(slog.MessageKey, "log")
   ),
 }
 
