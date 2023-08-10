@@ -1,8 +1,11 @@
 # Go `log/slog` middleware
 
-The `slogmw` package makes it easier to use the standard library `log/slog` package. 
+The `slogmw` package makes it easier to use the standard library `log/slog` package.
 
-This package provides middleware for adding, changing, or editing fields of the standard library structured logger.
+- [`log/slog`](https://pkg.go.dev/log/slog)
+
+Go 1.21 includes a new structured logger, but it's hard to modify to your specific logging requirements. 
+This package provides middleware to make it easier to add, change, or edit fields of the standard library structured logger.
 
 
 The slog package, and the slogmw package comes with two hooks:
